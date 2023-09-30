@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Selamat Datang di Dunia Catur!</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      h2 {
+        color: #8b4513;
+      }
+
+      button {
+        width: 200px;
+        font-size: 15px;
+        margin: 8px;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #a0522d;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div align="center">
+      <h2>Selamat Datang di Dunia Catur!</h2>
+      <img
+        id="gambar"
+        src="../dom/chess.png"
+        alt="Papan Catur"
+        width="200"
+        height="200"
+      />
+      <p id="caption"><b>Siap untuk menguji strategi catur Anda?</b></p>
+      <div class="button-group">
+        <div class="button">
+          <button>Sejarah Catur</button>
+        </div>
+        <div class="button">
+          <button>Aturan Permainan</button>
+        </div>
+        <div class="button">
+          <button><i>Fakta Menarik</i></button>
+        </div>
+        <div class="button">
+          <button>Mainkan (Segera Hadir)</button>
+        </div>
+        <div class="button">
+          <button>Keluar</button>
+        </div>
+      </div>
+    </div>
+    <hr size="2" width="95%" color="black" />
+    <div id="links">
+      <p>Situs lainnya yang mungkin Anda temukan menarik:</p>
+      <ul id="daftarLink">
+        <li>
+          <a href="http://itcupnyk.com" id="linkITC" target="_blank">ITC</a>
+        </li>
+        <li>
+          <a href="http://youtube.com" id="linkYT" target="_blank">Youtube</a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="dom.js"></script>
+  </body>
+</html>
