@@ -11,16 +11,14 @@
       <h2>Login Here</h2>
       <form action="#">
         <div class="input-box">
-          <input
-            type="text"
-            id="username"
-            name="username"
-            placeholder="Username"
-            required
-          />
+          <input type="text" id="username" name="username" required />
+          <label>Username</label>
+          <div class="me"></div>
         </div>
         <div class="input-box">
-          <input type="password" placeholder="Password" required />
+          <input type="password" id="password" required />
+          <label>Password</label>
+          <div id="toggle" onclick="showHide();"></div>
         </div>
         <button type="submit">Login</button>
       </form>
