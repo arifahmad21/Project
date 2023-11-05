@@ -6,8 +6,6 @@ function onChangeSearch(searchParam){
 
     .then(response => {
         const movies = response.data.Search
-        const check = response
-        console.log(check)
         let cards = '';
         for (const data of movies) {
             cards +=  `
@@ -26,16 +24,6 @@ function onChangeSearch(searchParam){
         console.log(error)
     })
 }
-
-// function showCards(data){
-//     return `
-//     <div class="card">
-//         <h1>${data.Title}</h1>
-//         <img src="${data.Poster}"
-//             title="${data.Title}">
-//     </div>
-//     `
-// }
 
 input.addEventListener('click', function(){
     const inputKeyword = document.querySelector('#search')
