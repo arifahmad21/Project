@@ -6,6 +6,7 @@ function onChangeSearch(searchParam){
 
     .then(response => {
         const movies = response.data.Search
+        console.log(movies)
         let cards = '';
         for (const data of movies) {
             cards +=  `
