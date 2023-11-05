@@ -39,30 +39,30 @@ let movie;
 
 // !berdasarkan searching
 // //? menampung semua yang di input di kolom search
-// function onChangeSearch(searchParameter){
-//     fetch("http://www.omdbapi.com/?apikey=d684a20e&s=" + searchParameter)
-//         .then(response => response.json())
-//         .then(response => {
-//             const movies = response.Search;
-//             let cards = '';
+function onChangeSearch(searchParameter){
+    fetch("http://www.omdbapi.com/?apikey=d684a20e&s=" + searchParameter)
+        .then(response => response.json())
+        .then(response => {
+            const movies = response.Search;
+            let cards = '';
 
-//             movies.forEach(data => cards += showCards(data));
+            movies.forEach(data => cards += showCards(data));
 
-//             const main = document.querySelector('#main');
+            const main = document.querySelector('#main');
 
-//             main.innerHTML = cards;
-//         })
-// }
+            main.innerHTML = cards;
+        })
+}
 
-// function showCards(data){
-//     return `
-//     <div class="card">
-//         <h1>${data.Title}</h1>
-//         <img src="${data.Poster}"
-//             title="${data.Title}">
-//     </div>
-//     `
-// }
+function showCards(data){
+    return `
+    <div class="card">
+        <h1>${data.Title}</h1>
+        <img src="${data.Poster}"
+            title="${data.Title}">
+    </div>
+    `
+}
 
 // // ! event untuk searching
 // input.addEventListener('blur', function(){

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #pembungkus_catatan {
+            margin-top: 20px;
+        }
+        .catatan {
+            padding: 0 0.5rem 0.25rem 0.5rem ;
+            border: 3px solid rgb(5, 75, 107);
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Aplikasi Catatan</h1>
+    <form action="">
+        <div style="margin-bottom:15px;">
+        <label for="">Judul</label>
+        <input id="judul" type="text" placeholder="Masukan Judul" required>
+        </div>
+        <div style="margin-bottom:15px;">
+            <label for="">Isi</label>
+            <input id="isi" type="text" placeholder="Masukan Isi" required>
+        </div>
+        <button type="Submit">Simpan Catatan</button>
+    </form>
+
+    <main id="pembungkus_catatan">
+
+        
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
